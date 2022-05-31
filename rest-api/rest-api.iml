@@ -70,7 +70,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.3.19" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.8.4" level="project" />
     <orderEntry type="module" module-name="core-service" />
-    <orderEntry type="module" module-name="repository" />
+    <orderEntry type="library" name="Maven: com.ziletech:repository:0.0.1-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.6.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:5.3.19" level="project" />
     <orderEntry type="library" name="Maven: com.sun.mail:jakarta.mail:1.6.7" level="project" />

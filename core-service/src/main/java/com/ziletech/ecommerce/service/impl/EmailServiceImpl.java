@@ -15,15 +15,9 @@ public class EmailServiceImpl implements EmailService {
 
 
     public void sendTextEmail(EmailTemplateDTO emailTemplate) {
-
         SimpleMailMessage message = new SimpleMailMessage();
-        if (emailTemplate.getSendTo().contains(",")) {
-            sendEmailToMultipleAddress(emailTemplate, message);
-
-        } else {
-            String address = emailTemplate.getSendTo();
-            send(emailTemplate, message, address);
-        }
+        String address = emailTemplate.getSendTo();
+        send(emailTemplate, message, address);
     }
 
     private void send(EmailTemplateDTO emailTemplate, SimpleMailMessage msg, String address) {
@@ -33,10 +27,4 @@ public class EmailServiceImpl implements EmailService {
         javaMailSender.send(msg);
     }
 
-    private void sendEmailToMultipleAddress(EmailTemplateDTO emailTemplate, SimpleMailMessage msg) {
-        String[] emails = emailTemplate.getSendTo().split(",");
-        for (String email : emails) {
-            send(emailTemplate, msg, email);
-        }
-    }
 }

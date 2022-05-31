@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="rest-api" />
         <module name="application" />
-        <module name="repository" />
         <module name="core-service" />
       </profile>
     </annotationProcessing>
